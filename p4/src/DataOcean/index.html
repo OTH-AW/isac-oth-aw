@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Data Ocean @ ISAC</title>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="stylesheet" type="text/css" href="DataOcean/css/DataOcean.css">
+<script type="text/javascript" src="DataOcean/js/DataOcean.js"></script>
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+ <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-deep_orange.min.css" />
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+	<div id="menubtt"><label for="check"><i class="material-icons">&#xE8B9;</i></label></div>
+	<input type="checkbox" id="check" checked="checked" >
+	<nav id="nav">
+	<header class="mdl-layout__header">
+	    <div class="mdl-layout__header-row">
+	      <!-- Title -->
+	      <span class="mdl-layout-title">DATA OCEAN @ ISAC</span>
+	      <!-- Add spacer, to align navigation to the right -->
+	      <div class="mdl-layout-spacer"></div>
+	    </div>
+	</header>
+	<div class="console"> Welcome to DataOcean@ISAC <br></div>
+	<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp gui">
+	<tr>
+		<td><button id="clc" class="mdl-button mdl-button--colored">Clear Console</button></td>
+		<td></td>
+		<td></td>
+	</tr>	<tr>
+		<td>off&#47;on</td>
+		<td>
+			<label for="anim" class="mdl-switch mdl-js-switch mdl-js-ripple-effect">
+				<input type="checkbox" id="anim" checked="checked" class="mdl-switch__input">
+		</label>
+		</td>
+		<td></td>
+	</tr>	
+	<tr>
+		<td><label for="seperate" class="mdl-slider_label" >Seperate</label></td>
+		<td><input id="seperate" class="mdl-slider mdl-js-slider" type="range" min="0.1" max="2" value="0.2" step="0.1" tabindex="0"></td>
+		<td><span id="sep">0.2</span></td>
+	</tr>
+	<tr>
+		<td><label for="align" class="mdl-slider_label" >Align</label></td>
+		<td><input id="align" class="mdl-slider mdl-js-slider" type="range" min="0.1" max="2" value="0.5" step="0.1" tabindex="1"></td>
+		<td><span id="ali">0.5</span></td>
+	</tr>
+	<tr>
+		<td><label for="cohesion" class="mdl-slider_label" >Cohesion</label></td>
+		<td><input id="cohesion" class="mdl-slider mdl-js-slider" type="range" min="0.1" max="2" value="0.1" step="0.1" tabindex="2"></td>
+		<td><span id="koh">0.1</span></td>
+	</tr>
+	<tr>
+		<td><label for="scale_field" class="mdl-slider_label" >Scale</label></td>
+		<td><input id="scale_field" class="mdl-slider mdl-js-slider" type="range" min="0.25" max="10" value="1" step="0.25" tabindex="2"></td>
+		<td><span id="scale">0.1</span></td>
+	</tr>	
+	<tr>
+		<td>Add Centroids?</td>
+		<td>
+			<label for="toggleCentroid"  class="mdl-switch mdl-js-switch mdl-js-ripple-effect">
+			<input type="checkbox" id="toggleCentroid"  class="mdl-switch__input">
+		</label>
+		</td>
+		<td></td>
+	</tr>
+	
+</table>
+</nav>
+	<canvas id="DataOcean">
+	</canvas>
+	<script type="text/javascript" src="DataOcean/js/jquery.js"></script>
+   	<script type="text/javascript">
+			var log = new Console(document.querySelector('.console'));
+			log.setVisible(true);
+			/* Test Cases */
+			var str1 = "This is a Foobar Text";			
+			var str2 = "This is a Foobar foo Text";	
+			var dist = StringMetrics.levenshteinDistanceFast(str1,str2);
+			log.println("Test StringMetrics: (4):"+dist);		
+			var ocean = new DataOcean('DataOcean').setFullScreen(true);
+
+			//Loading in San Francisco Crime Data - 1000 latest incidents from 2016-05-31, 17:45
+			jQuery.getJSON("DataOcean/data/san_francisco_crimes.json", function(data){
+				for(var i = 0; i < data.length; i++){
+					data[i].label = data[i].category;
+					ocean.add(data[i]);
+				}
+				log.println(data[0]);
+				log.println("Sample size:"+data.length);
+			});
+
+			var animation = true;
+			document.querySelector('#seperate').addEventListener('input', function() { ocean.seperate = this.value; document.querySelector('#sep').innerHTML=""+this.value;});
+			document.querySelector('#align').addEventListener('input', function() { ocean.align = this.value; document.querySelector('#ali').innerHTML=""+this.value;});
+			document.querySelector('#cohesion').addEventListener('input', function() { ocean.cohesion = this.value; document.querySelector('#koh').innerHTML=""+this.value;});
+			document.querySelector('#scale_field').addEventListener('input', function() {
+				ocean.scale = this.value; 
+				document.querySelector('#scale').innerHTML=""+this.value;
+				ocean.rescale(this.value);
+			});
+			document.querySelector('#anim').addEventListener('change', function() {  animation = ! animation; ocean.animation = animation; });
+			document.getElementById("DataOcean").addEventListener('click', function(e){ ocean.prepareClickHandler(e) });
+			document.getElementById("toggleCentroid").addEventListener('click', function(){ ocean.toggleCentroid(); });
+			document.getElementById("clc").addEventListener('click', function(){ log.clear(); });
+			document.getElementById("check").addEventListener('click', function(){
+				$("#nav").slideToggle();
+			});
+    </script>
+
+</body>
+</html>
