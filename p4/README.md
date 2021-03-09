@@ -12,7 +12,11 @@ About interactive clustering using the interactive K-Means algorithm
 
 * [Using Interactive Visual Analytics to analyze Influences of Climate on Industrial Production](docs/Meiller_MCCSIS_2017.pdf)
 * [Data Visualization and Evaluation for Industry 4.0 using an interactive k-Means Algorithm](docs/Meiller_Niewiera_CSRN-2603.pdf)
-* [Visual Analytics zur Auswertung von Daten für die Industrie 4.0 (German)](docs/Meiller_Niewiera_MC_2016.pdf)
+* [Visual Analytics zur Auswertung von Daten für die Industrie 4.0 (German)](docs/Meiller_Niewiera_MC_2016.pdf)
+
+## Small Smart Factory – ISAC Demonstrator
+
+* TBS
 
 ## Data Ocean Framework
 
