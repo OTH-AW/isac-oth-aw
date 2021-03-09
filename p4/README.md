@@ -16,7 +16,7 @@ About interactive clustering using the interactive K-Means algorithm
 
 ## Small Smart Factory – ISAC Demonstrator
 
-* See YT
+* See YT https://youtube.com
 
 ## Data Ocean Framework
 
