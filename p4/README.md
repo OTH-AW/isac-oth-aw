@@ -14,6 +14,14 @@ About interactive clustering using the interactive K-Means algorithm
 * [Data Visualization and Evaluation for Industry 4.0 using an interactive k-Means Algorithm](docs/Meiller_Niewiera_CSRN-2603.pdf)
 * [Visual Analytics zur Auswertung von Daten für die Industrie 4.0 (German)](docs/Meiller_Niewiera_MC_2016.pdf)
 
+About virtual sensors and data analyses
+
+* [Virtuelle Kraftsensorik zur Verschleißerkennung auf Basis von Tracedaten beim Fräsen](/docs/OTH_Forschungsbericht_2020_Meiller_Bloechl_Virtuelle_Sensorik.pdf)
+
+About information visualization
+
+* [Innovative Interaktions- und Visualisierungskonzepte zur Datenanalyse in der Produktion](/docs/OTH_Forschungsbericht_2020_Stephan_Innovative_Visualisierung.pdf)
+
 ## Small Smart Factory – ISAC Demonstrator
 
 * See YT https://youtube.com
