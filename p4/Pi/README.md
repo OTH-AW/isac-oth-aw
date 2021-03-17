@@ -8,3 +8,4 @@ In diesem Teil des Repository befindet sich alles für die Umsetzung der Verfolg
 
 ### Folgende Bibliothek wird zusätzlich benötigt:
 - python-dotenv [https://pypi.org/project/python-dotenv/](https://pypi.org/project/python-dotenv/)
+
