@@ -29,3 +29,7 @@ About information visualization
 ## Data Ocean Framework
 
 [Data Ocean Framework repository](https://github.com/OTH-AW/DataOcean)
+
+## Indstustry Icon Set
+
+[Find all Files and information in our industry icon set part](/industry-icons)
