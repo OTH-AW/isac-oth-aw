@@ -1,0 +1,70 @@
+Certificate Request:
+    Data:
+        Version: 0 (0x0)
+        Subject: C=FR, ST=IDF, L=Paris, O=NodeOPCUA, OU=NodeOPCUA, CN=NodeOPCUA-TEST
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:ac:20:a5:35:f1:aa:d7:59:1a:0d:86:31:f2:58:
+                    a5:83:56:bb:70:e0:14:29:8a:60:2d:94:0c:e0:c6:
+                    f8:5e:b8:61:6e:77:a7:d1:83:17:fc:a7:84:f0:66:
+                    64:b9:a6:7a:85:15:c2:5b:9b:fa:25:d0:bc:ba:24:
+                    f3:ac:33:c1:ac:b3:d7:4c:f3:67:49:d0:a8:3a:bb:
+                    77:22:ef:98:07:53:e3:f9:51:8b:37:61:78:98:d9:
+                    bc:68:58:f5:8d:79:2f:26:64:1d:95:aa:a0:36:b8:
+                    c8:4e:05:cd:78:67:a4:2e:f1:a0:9e:32:86:68:19:
+                    9a:e5:df:31:3d:f6:5c:11:91:ff:28:1f:18:b9:ac:
+                    b8:69:78:b5:6a:35:d5:c7:ae:b8:fb:60:3d:b3:e6:
+                    0d:6b:1f:e4:b2:4b:d0:5a:80:c0:12:c1:54:63:b5:
+                    e5:20:05:ff:e6:72:e4:a5:b9:79:56:02:77:d7:e9:
+                    66:2a:4d:31:37:74:02:6b:e9:1b:a3:fa:86:a3:b7:
+                    28:03:8c:93:3e:4e:f2:d5:45:42:85:61:cc:94:f8:
+                    29:5e:16:ca:55:f3:2b:8f:4b:95:6d:3c:72:7b:7f:
+                    f3:69:66:2b:3e:82:89:3b:43:c9:25:8a:54:3a:06:
+                    82:5b:57:fc:08:8e:a5:37:90:cd:3c:12:99:f9:24:
+                    63:0b
+                Exponent: 65537 (0x10001)
+        Attributes:
+        Requested Extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Subject Alternative Name: 
+                URI:www.oth-aw.de, DNS:DESKTOP-045MA2M
+    Signature Algorithm: sha256WithRSAEncryption
+         5e:ab:8f:c6:a6:b6:b2:57:6a:83:91:57:f4:e7:04:ba:b0:2c:
+         4a:88:e9:40:8a:4b:5e:7e:13:1b:8a:98:b0:67:39:00:32:a6:
+         8f:5b:a1:e3:2a:21:9a:8f:73:3c:98:78:57:80:2c:f7:96:07:
+         0e:26:71:79:e4:aa:d0:c0:99:11:90:36:65:00:e7:8c:9b:6f:
+         fa:c9:ea:69:d5:d7:66:7e:e1:81:df:df:a1:c2:82:13:f6:87:
+         6e:f6:96:b6:cd:cc:4d:87:3b:2c:b9:2a:c4:df:53:3b:1f:3d:
+         e5:c4:40:d8:d4:46:27:c0:fd:5c:8d:bb:c8:f4:65:36:45:a0:
+         89:fd:64:64:d1:4e:60:78:29:46:4a:69:54:e4:21:52:f7:1e:
+         92:84:62:c4:ab:8e:ac:83:61:89:74:cb:ad:7c:84:56:26:77:
+         04:19:0e:71:7b:b5:03:a8:b0:41:c4:77:d8:64:99:74:f6:ca:
+         45:f8:69:75:bf:33:44:f5:b2:3f:f9:f3:4a:1d:40:79:28:43:
+         78:6c:26:6c:07:b2:65:9d:ba:6f:91:62:fc:b6:87:c9:b3:6f:
+         4f:c6:76:84:58:d7:b5:08:35:f7:49:a5:5f:af:81:82:11:f4:
+         08:4f:c1:a9:46:4a:71:21:57:c1:cd:47:72:f3:e1:df:f8:f7:
+         75:2f:f0:44
+-----BEGIN CERTIFICATE REQUEST-----
+MIIDCDCCAfACAQAwbDELMAkGA1UEBhMCRlIxDDAKBgNVBAgMA0lERjEOMAwGA1UE
+BwwFUGFyaXMxEjAQBgNVBAoMCU5vZGVPUENVQTESMBAGA1UECwwJTm9kZU9QQ1VB
+MRcwFQYDVQQDDA5Ob2RlT1BDVUEtVEVTVDCCASIwDQYJKoZIhvcNAQEBBQADggEP
+ADCCAQoCggEBAKwgpTXxqtdZGg2GMfJYpYNWu3DgFCmKYC2UDODG+F64YW53p9GD
+F/ynhPBmZLmmeoUVwlub+iXQvLok86wzwayz10zzZ0nQqDq7dyLvmAdT4/lRizdh
+eJjZvGhY9Y15LyZkHZWqoDa4yE4FzXhnpC7xoJ4yhmgZmuXfMT32XBGR/ygfGLms
+uGl4tWo11ceuuPtgPbPmDWsf5LJL0FqAwBLBVGO15SAF/+Zy5KW5eVYCd9fpZipN
+MTd0AmvpG6P6hqO3KAOMkz5O8tVFQoVhzJT4KV4WylXzK49LlW08cnt/82lmKz6C
+iTtDySWKVDoGgltX/AiOpTeQzTwSmfkkYwsCAwEAAaBXMFUGCSqGSIb3DQEJDjFI
+MEYwCQYDVR0TBAIwADAOBgNVHQ8BAf8EBAMCAQYwKQYDVR0RBCIwIIYNd3d3Lm90
+aC1hdy5kZYIPREVTS1RPUC0wNDVNQTJNMA0GCSqGSIb3DQEBCwUAA4IBAQBeq4/G
+prayV2qDkVf05wS6sCxKiOlAiktefhMbipiwZzkAMqaPW6HjKiGaj3M8mHhXgCz3
+lgcOJnF55KrQwJkRkDZlAOeMm2/6yepp1ddmfuGB39+hwoIT9odu9pa2zcxNhzss
+uSrE31M7Hz3lxEDY1EYnwP1cjbvI9GU2RaCJ/WRk0U5geClGSmlU5CFS9x6ShGLE
+q46sg2GJdMutfIRWJncEGQ5xe7UDqLBBxHfYZJl09spF+Gl1vzNE9bI/+fNKHUB5
+KEN4bCZsB7JlnbpvkWL8tofJs29PxnaEWNe1CDX3SaVfr4GCEfQIT8GpRkpxIVfB
+zUdy8+Hf+Pd1L/BE
+-----END CERTIFICATE REQUEST-----

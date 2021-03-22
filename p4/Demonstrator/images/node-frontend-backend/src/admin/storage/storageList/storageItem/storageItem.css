@@ -1,0 +1,24 @@
+.activityIconBox {
+    width: 60px;
+    height: 60px;
+}
+
+.activityFontSize {
+    font-size:12px;
+}
+
+/*
+COLORS
+*/
+
+.bg-storage1 {
+    background-color:#74c8f1;
+}
+
+.bg-storage2 {
+    background-color:#31A4DE;
+}
+
+.bg-storage3 {
+    background-color:#1c85b9;
+}

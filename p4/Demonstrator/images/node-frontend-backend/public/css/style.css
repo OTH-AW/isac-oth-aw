@@ -1,0 +1,17 @@
+/* General CSS File For ISAC Small Smart Factory */
+
+/* Main Custom Styling */
+@import url("main.css");
+
+/* Cam Styling */
+@import url("cams.css");
+
+/* Responsive Additions */
+@import url("responsive.css");
+
+/* Colors */
+@import url("isac-colors.css");
+@import url("colors/isac-links.css");
+@import url("colors/isac-buttons.css");
+@import url("colors/isac-shadows.css");
+@import url("colors/isac-borders.css");

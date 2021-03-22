@@ -1,0 +1,15 @@
+.primary-isac-bottom-shadow {
+	-webkit-box-shadow: 0 8px 6px -6px #31A4DE;
+	   -moz-box-shadow: 0 8px 6px -6px #31A4DE;
+	        box-shadow: 0 8px 6px -6px #31A4DE;
+}
+.secondary-isac-bottom-shadow {
+	-webkit-box-shadow: 0 8px 6px -6px #314F5E;
+	   -moz-box-shadow: 0 8px 6px -6px #314F5E;
+	        box-shadow: 0 8px 6px -6px #314F5E;
+}
+.tertiary-isac-bottom-shadow {
+	-webkit-box-shadow: 0 8px 6px -6px #76BFE3;
+	   -moz-box-shadow: 0 8px 6px -6px #76BFE3;
+	        box-shadow: 0 8px 6px -6px #76BFE3;
+}

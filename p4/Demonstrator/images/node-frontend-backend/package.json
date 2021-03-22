@@ -1,0 +1,52 @@
+{
+  "name": "isac-opcua-server",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "async": "^3.1.0",
+    "concurrently": "^5.0.1",
+    "cors": "^2.8.5",
+    "d3": "^5.15.1",
+    "d3-scale": "^3.2.3",
+    "font-awesome": "^4.7.0",
+    "leaflet": "<1.7.0",
+    "mongoose": "^5.8.4",
+    "node-opcua": "^2.32.0",
+    "nodemon": "^2.0.2",
+    "query-string": "^6.13.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-fontawesome": "^1.7.1",
+    "react-json-view": "^1.19.1",
+    "react-leaflet": "^2.6.3",
+    "react-qr-code": "^1.0.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.3.0",
+    "react-unity-webgl": "^7.1.10",
+    "ws": "^7.1.2"
+  },
+  "scripts": {
+    "client": "react-scripts start",
+    "server": "nodemon backend/index.js --ignore node_modules/",
+    "ws-opcua-proxy": "nodemon backend/proxy/proxy.js --ignore node_modules/",
+    "start": "concurrently --kill-others \"npm run server\" \"npm run ws-opcua-proxy\" \"npm run client\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

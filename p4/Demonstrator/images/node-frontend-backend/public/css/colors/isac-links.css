@@ -1,0 +1,20 @@
+/* Colors of links */
+a.isac-primary,
+a.isac-primary:visited {
+    color: #31A4DE !important;
+}
+a.isac-primary:hover,
+a.isac-primary:active,
+a.isac-primary:focus {
+    color: #1d7eaf !important; /* 15% Darker than primary blue check  */
+}
+
+.bg-isac-primary a,
+.bg-isac-primary a:visited {
+    color: #fff !important;
+}
+.bg-isac-primary a:hover,
+.bg-isac-primary a:active,
+.bg-isac-primary a:focus {
+    color: #bde2f4 !important; /* 15% from to primary blue */
+}

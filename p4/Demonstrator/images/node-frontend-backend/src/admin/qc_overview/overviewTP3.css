@@ -1,0 +1,57 @@
+#accordion > .card > .card-header {
+    background:#F8F8FF !important;
+}
+
+.test {
+    position: relative;
+  }
+    
+  .test::after {
+    content: "\f107";
+    color: #333;
+    font-family: "FontAwesome"
+  }
+  
+  .test[aria-expanded="true"]::after {
+    content: "\f106";
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .respHeader {
+    font-size: 12px;
+  }
+
+  .iconSize {
+    font-size: 20px;
+  }
+
+  @media (min-width: 576px) {
+    p {
+      font-size: 14px;
+    }
+    .respHeader {
+      font-size: 14px;
+    }
+    .iconSize {
+      font-size: 25px;
+    }
+  }
+  
+
+  @media (min-width: 768px) {
+    p {
+      font-size: 16px;
+    }
+    .respHeader {
+      font-size: 22px;
+    }
+
+    .iconSize {
+      font-size: 30px;
+    }
+  }
+
+  

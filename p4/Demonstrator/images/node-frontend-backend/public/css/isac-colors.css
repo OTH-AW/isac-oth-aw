@@ -1,0 +1,31 @@
+/*****************************************************************************************
+ * To darken or lighten colors W3C schools has a color picker tool.olor picker tool.     *
+ * https://www.w3schools.com/colors/colors_picker.asp                                    *
+ * There you can see 5% steps lighter or darker, of your choosen color our choosen color *
+ *****************************************************************************************/
+
+/* Main Colors for ISAC */
+
+.isac-primary {
+    color: #31A4DE !important;
+}
+
+.isac-secondary {
+    color: #314F5E !important;
+}
+
+.isac-tertiary {
+    color: #76BFE3 !important;
+}
+
+.bg-isac-primary {
+    background-color: #31A4DE !important;
+}
+
+.bg-isac-secondary {
+    background-color: #314F5E !important;
+}
+
+.bg-isac-tertiary {
+    background-color: #76BFE3 !important;
+}

@@ -1,0 +1,68 @@
+body {
+    font-family: "Open Sans", sans-serif !important;
+}
+
+.head-contact-info {
+    display: block;
+    color: #fff !important;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    padding-left: 0;
+}
+.head-contact-info li {
+    display: block;
+    margin-right: 10px;
+    font-size: 18px;
+    text-align: right;
+}
+.head-contact-info li a {
+    text-decoration: none;
+}
+.head-contact-info li a i {
+    margin-right: 8px;
+    font-size: 20px;
+    display: inline;
+}
+    
+.social-links {
+    display: block;
+    color: #fff !important;
+    padding-left: 0;
+}
+.social-links li {
+    display: inline-block;
+    margin-right: 5px;
+}
+.head-contact-info li a {
+    text-decoration: none;
+}
+.social-links li a i {
+    font-size: 30px;
+}
+
+.logo > a {
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: #fff;
+    text-decoration:none;
+}
+
+h1.text-break,
+h2.text-break,
+h3.text-break,
+h3.text-break,
+h4.text-break,
+h5.text-break,
+h6.text-break {
+    -moz-hyphens: auto;
+    -o-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto; 
+}
+
+img.shapePreview {
+    
+} 
