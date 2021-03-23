@@ -26,12 +26,12 @@ About information visualization
 
 * See YT https://youtube.com
 * See ISAC-Demonstrator part
-* [See tracking support with NFC stations part](/Pi) 
+* [See tracking support with NFC stations part](/Pi/README.md) 
 
 ## Data Ocean Framework
 
 [Data Ocean Framework repository](https://github.com/OTH-AW/DataOcean)
 
-## Indstustry Icon Set
+## Industry Icon Set
 
-[Find all Files and information in our industry icon set part](/industry-icons)
+[Find all Files and information in our industry icon set part](/industry-icons/README.md)
