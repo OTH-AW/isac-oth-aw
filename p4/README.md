@@ -16,17 +16,17 @@ About interactive clustering using the interactive K-Means algorithm
 
 About virtual sensors and data analyses
 
-* [Virtuelle Kraftsensorik zur Verschleißerkennung auf Basis von Tracedaten beim Fräsen](/docs/OTH_Forschungsbericht_2020_Meiller_Bloechl_Virtuelle_Sensorik.pdf)
+* [Virtuelle Kraftsensorik zur Verschleißerkennung auf Basis von Tracedaten beim Fräsen](docs/OTH_Forschungsbericht_2020_Meiller_Bloechl_Virtuelle_Sensorik.pdf)
 
 About information visualization
 
-* [Innovative Interaktions- und Visualisierungskonzepte zur Datenanalyse in der Produktion](/docs/OTH_Forschungsbericht_2020_Stephan_Innovative_Visualisierung.pdf)
+* [Innovative Interaktions- und Visualisierungskonzepte zur Datenanalyse in der Produktion](docs/OTH_Forschungsbericht_2020_Stephan_Innovative_Visualisierung.pdf)
 
 ## Small Smart Factory – ISAC Demonstrator
 
 * See YT https://youtube.com
 * See ISAC-Demonstrator part
-* [See tracking support with NFC stations part](/Pi/README.md) 
+* [See tracking support with NFC stations part](Pi) 
 
 ## Data Ocean Framework
 
@@ -34,4 +34,4 @@ About information visualization
 
 ## Industry Icon Set
 
-[Find all Files and information in our industry icon set part](/industry-icons/README.md)
+[Find all Files and information in our industry icon set part](industry-icons)
