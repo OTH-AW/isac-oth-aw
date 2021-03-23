@@ -1,6 +1,6 @@
 # Iconset für Industrie-Kategorien
 
-Für die Umsetzung des ISAC-Demonstrators war es notwendig sich mit dem Design von Bedienelementen zu beschäftigen. Für die Kartenanwendungen haben wir eigene Iconsets erstellt, die für bestimmte Werkzeuge und Material-Typen nutzbar sind. Für die Entwicklung eines Alpha-Prototypen wurden Daten aus der Yelp-Data-Set-Challenge anhand von Restaurant-Daten genommen und die Namen und Kategorien umbenannt, passend dazu wurde nach aktuellem Stand bestmögliche grafische Repräsentationen entwickelt<sup>[1](#myfootnote1)</sup> <sup>[2](#myfootnote2)</sup> <sup>[3](#myfootnote3)</sup>.
+Für die Umsetzung des ISAC-Demonstrators war es notwendig sich mit dem Design von Bedienelementen zu beschäftigen. Für die Kartenanwendungen haben wir eigene Iconsets erstellt, die für bestimmte Werkzeuge und Material-Typen nutzbar sind. Für die Entwicklung eines Alpha-Prototypen wurden Daten aus der Yelp-Data-Set-Challenge anhand von Restaurant-Daten genommen und die Namen und Kategorien umbenannt, passend dazu wurde nach aktuellem Stand bestmögliche grafische Repräsentationen entwickelt<sup>[[1]](#myfootnote1)</sup> <sup>[[2]](#myfootnote2)</sup> <sup>[[3]](#myfootnote3)</sup>.
 
 Die fiktiven Testdaten wurden für drei Kategorien umgeschrieben, es gab drei Varianten: 
 
