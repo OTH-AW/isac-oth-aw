@@ -22,6 +22,33 @@ Stellt einen Jupyter-Server zur Verfügung, mit dem die in diesem Teilprojekt du
 Aufruf:
 - http://localhost:8888/
 
+#### **Virtuelle Kraftsensorik**
+
+Ziel war es, durch eine Berechnung der Trace-Daten einer Fräsmaschine – über mehrere Versuche hinweg –  aufzuzeigen, dass die auftretenden Kräfte virtuell abbildbar sind. Hintergrund ist der Versuch, aufwändige und teure Messsensorik durch eigens gemessener Daten der Verarbeitungmaschinen einzusparen. Die Untersuchung stellt eine erste Proof-Off-Konzept-Studie dar.
+
+Aufruf:
+
+- [Aufruf Readme](http://localhost:8888/notebooks/projects/force-trace-analysis/Readme.ipynb)
+- [Aufruf Notebook](http://localhost:8888/notebooks/projects/force-trace-analysis/notebooks/data_compare/Presentation.ipynb)
+
+![Virtuelle Kraftsensorik](readme_img/force_trace.png)force_trace.png
+
+#### **Analyse des Stromverbrauch anhand Sensordatensätzen**
+
+Ziel ist es, aus den Förderbanddatensätze des Teilprojekts 2. eine Datenanalyse  durchzuführen. Dabei stand ein Analyse der Werkstückträger und des Stromverbrauchs aus den Sensordatensätzen im Vordergrund. Grundsätzlich wurden dabei nach Optimierungsmöglichkeiten gesucht.
+
+Inhalt:
+- Analyse der Sensordaten
+- Analyse der Performance des Förderbandes
+- Leistungsverbrauch / Leistungsersparnis
+- Diverse Kennzahlen
+
+Aufruf:
+- [Aufruf Readme](http://localhost:8888/notebooks/projects/transport-module-power-analysis/Readme.ipynb)
+- [Aufruf Notebook](http://localhost:8888/notebooks/projects/transport-module-power-analysis/notebooks/data_compare/Analyze_Unnecessary_Worktime.ipynb)
+
+![Stromverbrauch anhand Sensordatensätzen](readme_img/power_usage.png)force_trace.png
+
 ### jupyter-notebooks-server
 Stellt einen Jupyter-Server zur Verfügung, der als API konfiguriert worden ist. Dadurch ist es möglich, mithilfe eines Jupyter-Notebooks auf Datensätze zugreifen zu können. Die Algorithmen der in *jupyter-notebooks* erstellten Notebooks können dadurch wiederverwendet und für weitere Komponenten integriert werden. Beispielsweise wurde die Sensordaten des Lagers aufbereitet und ausgewertet und können im Node.js Server eingebunden werden.
 
