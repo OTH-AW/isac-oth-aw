@@ -1,11 +1,11 @@
 # Demonstrator
 Mithilfe eines Demonstrators wurde innerhalb des Forschungsprojekts ISAC die Überwachung und Steuerung von Industrieanlagen umgesetzt. Dabei sollen dem Endanwender, unabhängig seines aktuellen Standortes, Informationen und Kennziffern zum System präsentiert werden. Dies kann mit einer klassischen Website oder innerhalb einer WebGL-Anwendung, in der ein 3D-Modell der Maschine angezeigt wird, durch einen digitalen Zwilling ermöglicht werden.
 
-Innerhalb dieses Repository werden die einzelnen Komponenten dieses Demonstrators vorgestellt. Diese bauen dabei jeweils auf einem Docker-Image auf. Zur Verwendung ist dementsprechend eine aktuelle Version von [Docker](https://www.docker.com/) notwendig.
+Innerhalb dieses Repository werden die einzelnen Komponenten dieses Demonstrators vorgestellt. Diese bauen dabei jeweils auf einem Docker-Image auf. Zur Verwendung der Anwendung ist dementsprechend eine aktuelle Version von [Docker](https://www.docker.com/) notwendig.
 
 ## Start der Anwendung
 
-Nach dem Start von Docker kann mithilfe des folgenden Befehls innerhalb dieses Verzeichnisses der Demonstrator gestartet werden. Dieser ist anschließend unter http://localhost:3000/ erreichbar. Der initiale Start benötigt einige Zeit, da viele Pakete erst heruntergeladen und automatisch konfiguriert werden müssen.
+Nach dem Start von Docker kann mithilfe des folgenden Befehls innerhalb dieses Verzeichnisses der Demonstrator gestartet werden. Dieser ist anschließend unter http://localhost:3000/ erreichbar. Der initiale Start benötigt mit erstmaligen Download der Images einige Zeit (ca. 10 Minuten oder deutlich mehr, abhängig von der Performance des Systems), da viele Pakete erst heruntergeladen und automatisch konfiguriert werden müssen.
 
 ```
 docker-compose down && docker-compose build && docker-compose up
@@ -35,6 +35,14 @@ Node.js Webserver, der für die Anzeige des Demonstrators verwendet wird. Ist zu
 
 Aufruf:
 - http://localhost:3000/
+
+In einem Administrationsdashboard kann für jede Station eine einzelne Ansicht gewählt werden und es können die standortspezifischen Daten angezeigt werden:
+
+![Admininistrations-Dashboard](readme_img/dashboard.png)
+
+Status einer Bestellung:
+
+![Admininistrations-Dashboard](readme_img/order_status.png)
 
 #### Steuerung der virtuellen Werkstücke
 

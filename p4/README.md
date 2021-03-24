@@ -24,9 +24,11 @@ About information visualization
 
 ## Small Smart Factory – ISAC Demonstrator
 
-* See YT https://youtube.com
-* See ISAC-Demonstrator part
-* [See tracking support with NFC stations part](/Pi) 
+* See our YouTube channel https://www.youtube.com/channel/UCy7iULKRmeYStWiXC-MJWew
+* See [Demonstrator](Demonstrator)
+* See [Analysis](Demonstrator#jupyter-notebooks)
+* See [WebGL Application](WebGL)
+* See [tracking support with NFC stations part](Pi) 
 
 ## Data Ocean Framework
 
