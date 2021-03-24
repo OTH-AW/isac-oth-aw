@@ -1,6 +1,6 @@
 # Iconset für Industrie-Kategorien
 
-Für die Umsetzung des ISAC-Demonstrators war es notwendig sich mit dem Design von Bedienelementen zu beschäftigen. Für die Kartenanwendungen haben wir eigene Iconsets erstellt, die für bestimmte Werkzeuge und Material-Typen nutzbar sind. Für die Entwicklung eines Alpha-Prototypen wurden Daten aus der Yelp-Data-Set-Challenge anhand von Restaurant-Daten genommen und die Namen und Kategorien umbenannt, passend dazu wurde nach aktuellem Stand bestmögliche grafische Repräsentationen entwickelt [^1] [^2] [^3].
+Für die Umsetzung des ISAC-Demonstrators war es notwendig sich mit dem Design von Bedienelementen zu beschäftigen. Für die Kartenanwendungen haben wir eigene Iconsets erstellt, die für bestimmte Werkzeuge und Material-Typen nutzbar sind. Für die Entwicklung eines Alpha-Prototypen wurden Daten aus der Yelp-Data-Set-Challenge anhand von Restaurant-Daten genommen und die Namen und Kategorien umbenannt, passend dazu wurde nach aktuellem Stand bestmögliche grafische Repräsentationen entwickelt<sup>[[1]](#myfootnote1)</sup> <sup>[[2]](#myfootnote2)</sup> <sup>[[3]](#myfootnote3)</sup>.
 
 Die fiktiven Testdaten wurden für drei Kategorien umgeschrieben, es gab drei Varianten: 
 
@@ -182,6 +182,8 @@ Die editierbaren Verktorgrafiken finden sich im Ordner [→ Verctor](/vector)
 
 ###### Verweise
 
-[^1]: R. Abdullah, R. Hübner, R. Cziwerny, and D. H. Wilson, *Pictograms, Icons & Signs: A Guide to Information Graphics*. Thames & Hudson, 2006.
-[^2]: C. Designs, *Icon Design Sketchbook with Icons Grid: Design and Sketch Icon Ideas Using Ready Grids from Notebook*. Amazon Digital Services LLC - Kdp Print Us, 2019.
-[^3]: F. Sockwell and E. Potts, *Icons: Entwicklung und Design visueller Symbole*. Stiebner, 2018.
+<a name="myfootnote1">[1]</a>: R. Abdullah, R. Hübner, R. Cziwerny, and D. H. Wilson, *Pictograms, Icons & Signs: A Guide to Information Graphics*. Thames & Hudson, 2006.
+
+<a name="myfootnote2">[2]</a>: C. Designs, *Icon Design Sketchbook with Icons Grid: Design and Sketch Icon Ideas Using Ready Grids from Notebook*. Amazon Digital Services LLC - Kdp Print Us, 2019.
+
+<a name="myfootnote3">[3]</a>: F. Sockwell and E. Potts, *Icons: Entwicklung und Design visueller Symbole*. Stiebner, 2018.
