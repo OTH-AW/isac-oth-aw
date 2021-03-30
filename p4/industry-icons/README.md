@@ -176,7 +176,7 @@ Zu den unterschiedlichen Kategorien wurden dann entsprechende Icon-Sets entwicke
 
 ## Icon-Dateien
 
-Die fertigen PNG Icons finden sich im Ordner [→ PNG](/png)
+Die fertigen PNG Icons finden sich im Ordner [→ PNG](png)
 
 Die editierbaren Verktorgrafiken finden sich im Ordner [→ Verctor](/vector)
 
