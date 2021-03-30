@@ -1,0 +1,57 @@
+/* Custom Styles for Overall Map */
+
+/* Marker */
+.overAllMap {
+    color: #31A4DE;
+    /* text-shadow: 0px 0px 10px rgba(255,255,255,2px.75); */
+    /* background: #31A4DE; */
+    text-shadow: 3px 3px 2px #FFFFFF, 3px -3px 2px #FFFFFF, -3px 3px 2px #FFFFFF, -3px -3px 2px #FFFFFF, 3px 0px 2px #FFFFFF, 0px 3px 2px #FFFFFF, -3px 0px 2px #FFFFFF, 0px -3px 2px #FFFFFF;
+}
+
+.markUp {
+    color: orange !important;
+    /* text-shadow: 0px 0px 10px rgba(255,255,255,2px.75); */
+    /* background: #31A4DE; */
+    text-shadow: 3px 3px 2px #FFFFFF, 3px -3px 2px #FFFFFF, -3px 3px 2px #FFFFFF, -3px -3px 2px #FFFFFF, 3px 0px 2px #FFFFFF, 0px 3px 2px #FFFFFF, -3px 0px 2px #FFFFFF, 0px -3px 2px #FFFFFF;
+}
+
+.clickableTableCell {
+    cursor: pointer;
+    text-align: center;
+
+}
+
+#printQCArrow {
+    transform: rotateZ(210deg);
+}
+
+.leaflet-popup-content {
+    padding: 5%;
+}
+
+.leaflet-popup {
+    width: 350px;
+}
+
+#backButton {
+    margin-top: 1%;
+}
+
+#mapWrapper {
+    /* width: 100%; */
+    height: 800px;
+    position: relative;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+#buttonWrapper {
+    position: absolute;
+    z-index: 3000;
+    top: 10px;
+    left: 50px;
+    width: 100%;
+}

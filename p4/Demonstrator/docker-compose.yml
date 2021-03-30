@@ -1,0 +1,116 @@
+version: '3.4'
+services:
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    hostname: mongodb
+    ports:
+      - "27017:27017"
+    healthcheck:
+      test: test $$(echo "rs.initiate().ok || rs.status().ok" | mongo --quiet) -eq 1
+      interval: 10s
+      start_period: 30s
+    command:
+      --replSet rs0
+    logging:
+      driver: none
+
+  mongodb-seeder:
+    build:
+      context: ./images/mongo-seeder
+    restart: on-failure
+    depends_on:
+      - mongodb
+
+  jupyter-notebooks:   
+    # Notebooks
+    build: './images/jupyter-notebooks/'
+    volumes:
+      - ./images/jupyter-notebooks/:/home/isac/
+    working_dir: /home/isac/
+    command:
+      jupyter
+      notebook
+      --ip=0.0.0.0
+      --NotebookApp.token=''
+      --allow-root
+    environment:
+      - MONGODB_HOST=mongodb
+    ports:
+      - "8888:8888"
+    depends_on:
+      - mongodb-seeder
+
+  jupyter-server:   
+    # API
+    build: './images/jupyter-notebooks-server/'
+    volumes:
+      - ./images/jupyter-notebooks-server/:/home/isac/
+    working_dir: /home/isac/notebooks/api
+    command:
+      jupyter
+      kernelgateway
+      --ip=0.0.0.0
+      --KernelGatewayApp.seed_uri=/home/isac/notebooks/api/SensorAPI.ipynb
+      --KernelGatewayApp.api='kernel_gateway.notebook_http'
+      --KernelGatewayApp.port=8898
+     --KernelGatewayApp.allow_origin='*'
+    environment:
+      - MONGODB_HOST=mongodb
+    ports:
+      - "8898:8898"
+    depends_on:
+      - mongodb-seeder
+
+  opcua-tp1-server-1:
+    build: './images/python-opcua-tp1-server-1/'
+    environment:
+      - APP_HOST=0.0.0.0
+      - APP_PORT=4840
+      - PYTHONUNBUFFERED=1
+    ports:
+      - "4840:4840"
+
+  opcua-tp1-server-2:
+    build: './images/python-opcua-tp1-server-2/'
+    environment:
+      - APP_HOST=0.0.0.0
+      - APP_PORT=4840
+      - PYTHONUNBUFFERED=1
+    ports:
+      - "4841:4840"
+
+  opcua-tp2-server:
+    build: './images/python-opcua-tp2-server/'
+    environment:
+      - APP_HOST=0.0.0.0
+      - APP_PORT=4845
+    ports:
+      - "4845:4845"
+
+  node:
+    build: './images/node-frontend-backend/'
+    # Für Development, damit Hot-Reloading funktioniert
+    # Wenn man balena livepush verwendet, gibt es die Referenz ./ nicht.
+    # Dementsprechend kann man das Volume nicht einbinden.
+    volumes:
+      - ./images/node-frontend-backend/:/home/app/
+      - /home/app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - OPCUA_TEMPERATURSERVER_HOST=opcua-temperatur-server
+      - OPCUA_TEMPERATURSERVER_PORT=8080
+      - OPCUA_TP1_URI_1=opc.tcp://opcua-tp1-server-1:4840/opcua/server/
+      - OPCUA_TP1_URI_2=opc.tcp://opcua-tp1-server-2:4840/opcua/server/
+      # - OPCUA_TP1_URI_1=opc.tcp://10.10.143.108:4840/opcua/server/
+      # - OPCUA_TP1_URI_2=opc.tcp://10.10.143.109:4840/opcua/server/
+      - OPCUA_TP2_URI=opc.tcp://opcua-tp2-server:4845
+      # - OPCUA_TP2_URI=opc.tcp://10.10.143.48:4845
+      - WS_PROXY_PORT=8089
+      - MONGODB_HOST=mongodb
+    depends_on:
+      - mongodb
+    ports:
+      - "3000:3000"
+      - "5000:5000"
+      - "8089:8089"

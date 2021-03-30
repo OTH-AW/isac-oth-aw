@@ -1,0 +1,103 @@
+img.cam {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+/* For the Grid */
+.containerCam {
+  width: 100%;
+  position: relative;
+}
+
+.camImage  {
+  max-width: 100%
+}
+
+.tag {
+  float: left;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: 5px;
+  z-index: 1000;
+  background-color: rgba(49,164,222,0.75);
+  padding-left: 15px;
+  color: #FFFFFF;
+}
+.camOverlay {
+  min-height: 3vh;
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  background-color: #31A4DE;
+  background-color: rgba(49,164,222,0.75);
+  padding-left: 15px;
+  text-align: left;
+  vertical-align: middle;
+  line-height: 3vh; 
+  color: white;  
+}
+.camOverlay a {
+  margin-right: 15px;
+}
+
+ul.camGrid {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li.camGrid {
+  height: 35vh;
+  flex-grow: 1;
+  position: relative;
+}
+
+/* li:last-child {
+  
+  flex-grow: 10;
+} */
+
+img.camGrid {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+
+
+@media (max-aspect-ratio: 1/1) {
+  li.camGrid {
+    height: 30vh;
+  }
+}
+
+
+
+@media (max-height: 480px) {
+  li.camGrid {
+    height: 80vh;
+  }
+}
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+  ul.camGrid {
+    flex-direction: row;
+  }
+
+  li.camGrid {
+    height: auto;
+    width: 100%;
+  }
+  img.camGrid {
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
+}

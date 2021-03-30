@@ -1,0 +1,15 @@
+.btn-outline-isac-primary-light {
+    color: #31A4DE;
+    border-color:#31A4DE
+}
+
+.btn-outline-isac-primary-light:hover {
+    color: #fff;
+    background-color: #31A4DE;
+    border-color:#31A4DE
+}
+
+.btn-outline-isac-primary-light:focus, .btn-outline-isac-primary-light.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(49, 164, 222, 0.5);
+    box-shadow:0 0 0 0.2rem rgba(49, 164, 222, 0.5);
+}

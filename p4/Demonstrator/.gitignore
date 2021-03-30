@@ -1,0 +1,13 @@
+**/.git
+**/node_modules/
+__pycache__
+
+# Ordner sollen leer bleiben, muss SO gemacht
+# werden damit es für Balena funktioniert
+/images/node-frontend-backend/node_modules/*
+/images/ipynb-jupyter-notebooks-server/data/*
+!/images/node-frontend-backend/node_modules/.gitkeep
+!/images/ipynb-jupyter-notebooks-server/data/.gitkeep
+
+
+

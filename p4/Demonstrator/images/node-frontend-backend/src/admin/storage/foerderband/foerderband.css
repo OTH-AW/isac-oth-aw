@@ -1,0 +1,66 @@
+.link-button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	width: 100%
+  }
+  
+  .link-button:hover,
+  .link-button:focus {
+	text-decoration: none;
+	outline: none;
+  }
+
+.card-header {
+	text-align: center;
+	background-color: rgb(212, 212, 212) !important;
+}
+
+#control {
+	background-color: rgb(179, 179, 179) !important;
+}
+
+#controlBody {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.placeholder {
+height: fit-content;
+width: auto;
+}
+
+.faIcon {
+	float: right;
+}
+
+.card {
+	margin-top: 1%;;
+}
+
+#map {
+	height: 500px;
+	width: 100%;
+	align-self: center;
+}
+
+.mousePointer {
+	cursor: pointer;
+}
+
+.spinner-border {
+	margin-top: 245px;	
+}
+
+#loadingDiv {
+	border: 1px solid lightgrey;
+}
+
+.card .chartBody svg, 
+.card .chartBody svg rect {
+	width: 100%;
+}
